@@ -5,7 +5,7 @@ import Loader from "./Loader";
 let now = new Date().toLocaleTimeString();
 let dia = new Date().toDateString();
 
-const ClimaHoy = ({ clima, pronostico }) => {
+const ClimaHoy = ({ clima }) => {
   const [hora, setHora] = useState(now);
   const [day, setDay] = useState(dia);
   let url = "https://api.openweathermap.org/img/w/";
@@ -26,7 +26,7 @@ const ClimaHoy = ({ clima, pronostico }) => {
           <p>{day}</p>
         </article>
         <article className={styles.adicional}>
-          <p>{clima ? `Humedad: ${clima.main.humidity} %` : <Loader />}</p>
+          <p>{clima ? `Humedad: ${clima.main.humidity} %` : null}</p>
           <p>{clima ? `Viento: ${clima.wind.speed * 10} km/h` : null}</p>
           <p className={styles.img}>
             {clima ? (
