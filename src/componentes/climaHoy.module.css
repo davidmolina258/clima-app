@@ -1,0 +1,45 @@
+.container {
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.hora {
+  margin-top: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+.hora > p {
+  font-size: 1rem;
+  text-align: center;
+}
+.hora span {
+  font-size: 2rem;
+}
+.adicional {
+  width: 90%;
+  padding: 0.5rem;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: #00000075;
+  margin: 0 1rem;
+}
+
+.temperatura {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+.temperatura > p {
+  font-size: 1rem;
+}
+.img {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}

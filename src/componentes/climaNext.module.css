@@ -1,0 +1,46 @@
+.div {
+  background-color: #00000080;
+}
+.containerNext {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 700%;
+  height: 28vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background-color: #00000080;
+  transition: transform 90s ease;
+}
+
+.dia {
+  width: 100%;
+  height: 80%;
+  max-width: 200px;
+  background-color: 00000050;
+  border: 2px solid white;
+  border-radius: 10px;
+  list-style: none;
+  margin: 0 0.5rem;
+  text-align: center;
+  color: aliceblue;
+}
+.dato {
+  margin: 0;
+}
+.containerNext:hover {
+  transform: translateX(-2735px);
+}
+@media screen and (min-width: 660px) {
+  .containerNext {
+    width: 500%;
+  }
+}
+@media screen and (min-width: 920px) {
+  .containerNext {
+    width: 300%;
+  }
+}
